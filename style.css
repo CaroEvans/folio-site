@@ -8,7 +8,6 @@ body {
 }
 
 .mission {
-  box-sizing: border-box;
   display: block;
   width: 100%;
   padding: 0 30%;
@@ -44,33 +43,30 @@ body {
     grid-area: footer;
 } */
 
+#box {
+  color: white;
+  margin: 1vw;
+  padding: 5vw;
+}
+
 .box-blue {
   grid-area: skills;
   background-color: blue;
-  color: white;
-  padding: 5%;
 }
 .box-purple {
   grid-area: exp;
   background-color: purple;
-  color: white;
-  padding: 5%;
 }
 .box-red {
   grid-area: contact;
   background-color: red;
-  color: white;
-  padding: 5%;
 }
 .box-green {
   grid-area: linkedin;
   background-color: green;
-  color: white;
-  padding: 5%;
 }
 .box-yellow {
   grid-area: git;
   background-color: yellow;
-  color: black;
-  padding: 5%;
+  color: black!important;
 }
