@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,400i,700');
+
 * {
   box-sizing: border-box;
   /* padding: 0;
@@ -5,14 +7,37 @@
 }
 
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: "Arvo", Helvetica, sans-serif;
   text-align: center;
+}
+
+#logo {
+  height:15vw;
+  width:15vw;
+  margin-top: 2vw;
+  background-color: blue;
+}
+.img-circle {
+    border-radius: 50%;
+}
+h1 {
+  font-weight: 400;
+  font-size: 1.85em;
+}
+#sm {
+  font-weight: 400;
+  font-size: .75em;
+
 }
 
 .mission {
   display: block;
   width: 100%;
-  padding: 0 30vw;
+  padding: 0 30vw 2vw 30vw;
+  text-align: center;
+}
+.disclaimer {
+  font-size: .8em;
 }
 
 .main {
@@ -24,12 +49,12 @@ body {
     padding: 0 14vw;
     line-height: 0;
     display: grid;
-    grid-template-columns: repeat(4, 18vw);
+    grid-template-columns: 36vw 18vw 18vw;
     grid-template-rows: 36vw 18vw 18vw;
     grid-template-areas:
-    "one one two two"
-    "three three four four"
-    "three three five six";
+    "one two two"
+    "three four four"
+    "three five six";
 }
 
 .box {
@@ -68,24 +93,23 @@ body {
 @media (max-width: 500px) {
   .main-area {
       display: grid;
-      padding: 0 10vw;
-      grid-template-columns: 80vw;
-      grid-template-rows: 80vw 80vw 80vw 80vw 80vw 80vw ;
+      padding: 0 20vw;
+      grid-template-columns: 30vw 30vw;
+      grid-template-rows: 60vw 60vw 60vw 30vw 30vw 30vw ;
       grid-template-areas:
-      "one"
-      "two"
-      "three"
-      "four"
-      "five"
-      "six";
+      "one one"
+      "two two"
+      "three three"
+      "four four"
+      "five six"
   }
   .mission {
-    text-align: left;
+    text-align: center;
     font-size: 1em;
     line-height: 1.2em;
     display: block;
     width: 100%;
-    padding: 0 8vw 0 12vw;
+    padding: 0 10vw 0 10vw;
   }
 }
 
