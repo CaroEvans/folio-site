@@ -1,31 +1,32 @@
-@import url('https://fonts.googleapis.com/css?family=Arvo:400,400i,700');
-
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,700|Rubik:400,500');
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Arvo", Helvetica, sans-serif;
+  font-family: "Rubik", Helvetica, sans-serif;
+  font-weight: 400;
+  background-color: rgba(243,156,18, 0.25);
   text-align: center;
-  font-size: 10px;
-  /* background-color: rgba(243,156,18, 0.25) */
 }
 
 #logo {
-  height:11vw;
-  width:11vw;
-  margin-top: 2vw;
+  height:120px;
+  width:120px;
   transition: all 700ms ease-in-out;
+  border-radius: 50%;
+  border: 2px white solid;
 }
 #logo:hover {
-  -ms-transform: rotate(720deg); /* IE 9 */
   -webkit-transform: rotate(720deg); /* Chrome, Safari, Opera */
   transform: rotate(720deg);
 }
 
 h1 {
+  font-family: "Arvo", Helvetica, sans-serif;
   font-weight: 700;
   font-size: 26px;
+  padding: 0;
 }
 
 #sm-heading {
@@ -33,15 +34,14 @@ h1 {
   font-size: 20px;
 
 }
-
 .para {
-  font-size: 15px;
-  line-height: 20px;
-  width: 100%;
+  font-size: 18px;
   text-align:left;
 }
+
 h3.para {
-  font-size: 24px;
+  font-size: 22px;
+  font-family: "Arvo", Helvetica, sans-serif;
 }
 .white-txt {
   color:white;
@@ -49,7 +49,7 @@ h3.para {
 
 .nav-grid {
     padding: 0 13.2vw;
-    line-height: 1.2;
+    line-height: 1.4;
     display: grid;
     grid-template-columns: 36vw 18vw 18vw;
     grid-template-rows: 36vw 18vw 18vw;
@@ -58,43 +58,41 @@ h3.para {
     "three five six"
     "three four four";
 }
-
 .box {
-  padding: 4vw;
-  position: relative;
+  padding: 3vw;
 }
 
 .blue {
   grid-area: six;
-  background-color: darkturquoise;
+  background-color: rgba(0, 206, 209, 1);
 }
 .blue:hover {
     background: rgba(0, 206, 209, 0.7);
   }
 .purple {
   grid-area: five;
-  background-color: #9b59b6;
+  background-color: rgb(155,89,182);
 }
 .purple:hover {
-    background: rgb(155,89,182,0.7);
+    background: rgba(155,89,182,0.7);
   }
 .red {
   grid-area: two;
-  background-color: tomato;
+  background-color: rgb(255,99,71);
 }
 .red:hover {
     background: rgba(255,99,71, 0.7);
   }
 .yellow{
   grid-area: three;
-  background-color: gold;
+  background-color: rgb(250,215,0);
 }
 .yellow:hover {
     background: rgba(255,215,0, 0.7);
   }
 .orange {
   grid-area: one;
-  background-color: orange;
+  background-color: rgb(255,165,0);
 }
 .orange:hover {
     background: rgba(255,165,0, 0.7);
@@ -117,50 +115,50 @@ h3.para {
 .github {
 	filter: invert(100%);
 }
-
-  @media (max-width: 500px) {
-    .box {
-      padding: 0 5vw 0 5vw;
-      position: relative;
-    }
-    .nav-grid {
-        display: grid;
-        padding: 0 18vw;
-        grid-template-columns: 30vw 30vw;
-        grid-template-rows: auto;
-        grid-template-areas:
-        "one one"
-        "two two"
-        "three three"
-        "four four"
-        "five six"
-    }
-    .desc {
-      text-align: center;
-      font-size: 1em;
-      line-height: 1.2em;
-      display: block;
-      width: 100%;
-      padding: 0 20vw 0 20vw;
-    }
-    #logo {
-      height:30vw;
-      width:30vw;
-      margin-top: 2vw;
-    }
-    #logo:hover {
-      -ms-transform: none; /* IE 9 */
-      -webkit-transform: none; /* Chrome, Safari, Opera */
-      transform: none;
-    }
-    h3.para {
-      font-size: 24px;
-      line-height: 28px;
-    }
-    .social-logo {
-      overflow:hidden;
-      width:100%;
-      height:100%;
-      padding: 4vw;
-    }
+@media (max-width: 1100px) {
+  .nav-grid {
+    grid-template-rows: auto;
   }
+}
+
+@media (max-width: 700px) {
+  .box {
+    padding: 0 5vw 0 5vw;
+    position: relative;
+  }
+  .nav-grid {
+      display: grid;
+      padding: 0 18vw;
+      grid-template-columns: 30vw 30vw;
+      grid-template-rows: auto;
+      grid-template-areas:
+      "one one"
+      "two two"
+      "three three"
+      "four four"
+      "five six"
+  }
+  #logo {
+    height:100px;
+    width:100px;
+    border: 2px white solid;
+  }
+  #logo:hover {
+    -ms-transform: none; /* IE 9 */
+    -webkit-transform: none; /* Chrome, Safari, Opera */
+    transform: none;
+  }
+  h3.para {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .social-logo {
+    overflow:hidden;
+    width:100%;
+    height:100%;
+    padding: 4vw;
+  }
+}
+@media (max-width: 500px) {
+
+}
