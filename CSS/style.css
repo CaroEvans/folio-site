@@ -8,6 +8,7 @@ body {
   font-family: "Arvo", Helvetica, sans-serif;
   text-align: center;
   font-size: 10px;
+  /* background-color: rgba(243,156,18, 0.25) */
 }
 
 #logo {
@@ -54,8 +55,8 @@ h3.para {
     grid-template-rows: 36vw 18vw 18vw;
     grid-template-areas:
     "one two two"
-    "three four four"
-    "three five six";
+    "three five six"
+    "three four four";
 }
 
 .box {
@@ -64,42 +65,42 @@ h3.para {
 }
 
 .blue {
-  grid-area: one;
+  grid-area: six;
   background-color: darkturquoise;
 }
 .blue:hover {
     background: rgba(0, 206, 209, 0.7);
   }
 .purple {
-  grid-area: two;
-  background-color: mediumpurple;
+  grid-area: five;
+  background-color: #9b59b6;
 }
 .purple:hover {
-    background: rgba(147,112,219, 0.7);
+    background: rgb(155,89,182,0.7);
   }
 .red {
-  grid-area: three;
+  grid-area: two;
   background-color: tomato;
 }
 .red:hover {
     background: rgba(255,99,71, 0.7);
   }
 .yellow{
-  grid-area: four;
+  grid-area: three;
   background-color: gold;
 }
 .yellow:hover {
     background: rgba(255,215,0, 0.7);
   }
 .orange {
-  grid-area: five;
+  grid-area: one;
   background-color: orange;
 }
 .orange:hover {
     background: rgba(255,165,0, 0.7);
   }
 .green {
-  grid-area: six;
+  grid-area: four;
   background-color: mediumseagreen;
 }
 .green:hover {
