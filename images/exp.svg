@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="519px" height="173px" viewBox="0 0 519 173" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>exp</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="exp" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <text id="2016---18" font-family="Arvo" font-size="14" font-weight="normal" letter-spacing="0.0874999985" fill="#FFFFFF">
+            <tspan x="231.223438" y="150">2016 - 18</tspan>
+        </text>
+        <text id="99-Bikes" font-family="Arvo-Bold, Arvo" font-size="14" font-weight="bold" letter-spacing="0.116666667" fill="#FFFFFF">
+            <tspan x="230.220833" y="131">99 Bikes</tspan>
+        </text>
+        <g id="bike" transform="translate(259.500000, 66.000000) scale(-1, 1) translate(-259.500000, -66.000000) translate(194.000000, 26.000000)" stroke="#FFFFFF" stroke-width="5">
+            <circle id="Oval-2" cx="25" cy="55" r="25"></circle>
+            <circle id="Oval-2-Copy" cx="106" cy="55" r="25"></circle>
+            <polyline id="Path-19" stroke-linecap="round" points="24 58 40.0015793 0 59 0"></polyline>
+            <path d="M77,4 L97,4" id="Path-20" stroke-linecap="round"></path>
+            <polyline id="Path-21" stroke-linejoin="round" points="87.9577906 4 87.9577906 19.9189445 67.4411412 56 35 19.9189445 87.9577906 19.9189445 105 56 67.8128092 56"></polyline>
+        </g>
+        <g id="cap" transform="translate(26.000000, -9.000000)">
+            <text id="2012---14" font-family="Arvo" font-size="14" font-weight="normal" letter-spacing="0.0874999985" fill="#FFFFFF">
+                <tspan x="32.3181641" y="159">2012 - 14</tspan>
+            </text>
+            <text id="Design-School" font-family="Arvo-Bold, Arvo" font-size="14" font-weight="bold" letter-spacing="0.116666667" fill="#FFFFFF">
+                <tspan x="9.68307291" y="140">Design School</tspan>
+            </text>
+            <polygon id="Rectangle" stroke="#FFFFFF" stroke-width="5" transform="translate(59.396970, 59.396970) rotate(-45.000000) translate(-59.396970, -59.396970) " points="17.3969696 17.3969696 76.5470712 43.0582497 101.39697 101.39697 43.3793437 75.95805"></polygon>
+            <path d="M16.8974609,67.1982422 L16.8974609,104.960487 C27.9677734,111.327975 41.9475911,114.511719 58.8369141,114.511719 C75.726237,114.511719 89.7050781,111.802734 100.773438,106.384766 L100.773438,66.9301214" id="Path-2" stroke="#FFFFFF" stroke-width="5"></path>
+            <path d="M118.84375,59.0126953 L118.84375,115.380533" id="Path-4" stroke="#FFFFFF" stroke-width="5"></path>
+        </g>
+        <g id="CA" transform="translate(372.000000, 29.000000)">
+            <text id="Feb---Aug-2018" font-family="Arvo" font-size="14" font-weight="normal" letter-spacing="0.0874999985" fill="#FFFFFF">
+                <tspan x="8.52080079" y="121">Feb - Aug 2018</tspan>
+            </text>
+            <text id="Coder-Academy" font-family="Arvo-Bold, Arvo" font-size="14" font-weight="bold" letter-spacing="0.116666667" fill="#FFFFFF">
+                <tspan x="0.686490882" y="102">Coder Academy</tspan>
+            </text>
+            <g id="A" transform="translate(19.000000, 0.000000)">
+                <path d="M4.5,68.08 L4.5,5.92 C4.5,1.82204716 7.82204716,-1.5 11.92,-1.5 L74.08,-1.5 C78.1779528,-1.5 81.5,1.82204716 81.5,5.92 L81.5,68.08 C81.5,72.1779528 78.1779528,75.5 74.08,75.5 L11.92,75.5 C7.82204716,75.5 4.5,72.1779528 4.5,68.08 Z" id="Rectangle-2" stroke="#FFFFFF" stroke-width="3"></path>
+                <path d="M62.064118,13.5438282 C63.6660843,15.7099232 63.1608806,18.730065 60.9357139,20.2895038 C58.7105471,21.8489426 55.6080427,21.3571505 54.0060764,19.1910555 C49.4099854,12.976462 37.2314622,9.73291148 27.8206647,12.8925282 C17.1070731,16.4895499 9.92906554,25.6675949 9.92906554,37.1535644 C9.92906554,48.2039748 17.5687047,57.6149908 27.8953331,61.2625599 C35.8887743,64.0860011 46.8152146,61.0914785 54.8412479,54.5261293 C56.9403595,52.8090419 60.0719608,53.0735594 61.835875,55.1169457 C63.5997893,57.160332 63.3280581,60.2087983 61.2289465,61.9258857 C50.7150709,70.5263067 36.2419402,74.4928425 24.508607,70.3483975 C10.4493149,65.3823779 0,52.5102163 0,37.1535644 C0,21.4170101 9.97791367,8.65890974 24.5832755,3.75525041 C37.9932612,-0.747068869 54.8068732,3.73096177 62.064118,13.5438282 Z" id="Path-24" stroke="#FFFFFF" stroke-width="3" fill-rule="nonzero"></path>
+                <path d="M52.3474002,43.4267648 L67.0176246,43.4267648 L59.2562571,27.7497088 L52.3474002,43.4267648 Z" id="Path-5" stroke="#FFFFFF" stroke-width="3"></path>
+                <polyline id="Path-8" stroke="#FFFFFF" stroke-width="3" points="59.2854004 9.99291992 63.954389 9.99291992 81.6252441 42.4287109"></polyline>
+                <path d="M31.5106918,62.6063918 L51.3554136,16.8641868" id="Path-3" stroke="#FFFFFF" stroke-width="3"></path>
+                <path d="M49.0081571,59.7069628 L44.911377,59.3200684 L47.344436,52.420166 L56.8178711,52.420166 L54.2685547,56.420166 L50.1716773,56.420166 L49.0081571,59.7069628 Z M61.28125,56.420166 L59.2294922,52.420166 L75.0963289,52.420166 L82.3674316,66.5004883 L79.8987926,69.7259775 L72.7108311,56.420166 L61.28125,56.420166 Z" id="Path-10" fill="#FFFFFF" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>
