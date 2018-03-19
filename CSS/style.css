@@ -1,34 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Arvo:400,700|Rubik:400,500');
-
 * {
   box-sizing: border-box;
 }
-
 body {
   font-family: "Rubik", Helvetica, sans-serif;
   font-weight: 400;
   background-color: rgba(243,156,18, 0.25);
   text-align: center;
 }
-#logo {
-  height:120px;
-  width:120px;
+#head {
+  height:140px;
+  width:140px;
   transition: all 700ms ease-in-out;
   border-radius: 50%;
-  border: 2px white solid;
+  border: 3px white solid;
 }
-#logo:hover {
+#head:hover {
   -webkit-transform: rotate(720deg); /* Chrome, Safari, Opera */
   transform: rotate(720deg);
 }
-
 h1 {
   font-family: "Arvo", Helvetica, sans-serif;
   font-weight: 700;
   font-size: 26px;
-  padding: 0;
 }
-
 #sm-heading {
   font-weight: 400;
   font-size: 20px;
@@ -44,10 +39,12 @@ h1 {
 .para {
   font-size: 18px;
   text-align:left;
+  line-height: 1.4;
 }
 h3.para {
   font-size: 22px;
   font-family: "Arvo", Helvetica, sans-serif;
+  line-height: 1;
 }
 a.button, a.button-d{
   display:inline-block;
@@ -56,12 +53,12 @@ a.button, a.button-d{
   margin:0 0.1em 0.1em 0;
   box-sizing: border-box;
   text-decoration:none;
- font-family:"Arvo",sans-serif;
- font-weight:400;
- font-size: 15px;
- color:#000000;
- text-align:center;
- transition: all 0.15s;
+  font-family:"Arvo",sans-serif;
+  font-weight:400;
+  font-size: 15px;
+  color:#000000;
+  text-align:center;
+  transition: all 700ms ease-in-out;
 }
 a.button:hover, a.button-d:hover{
  color:#222222;
@@ -72,30 +69,25 @@ a.button:active, a.button-d:active{
   color:#222222;
   border-color:#222222;
 }
-
 .nav-grid {
     padding: 0 13.2vw;
-    line-height: 1.4;
     display: grid;
     grid-template-columns: 12vw 12vw 12vw 18vw 18vw;
     grid-template-rows: 24vw 12vw 18vw 18vw;
     grid-template-areas:
     "one one one two two"
-    "one-l-1 one-l-2 one-l-3 two-l two-l"
-    "three three three five six"
+    "one-l-1 one-l-2 one-l-3 two-l-1 two-l-2"
+    "three three three five six "
     "three three three four four";
 }
-.box {
+.txt-box {
   padding: 1vw 3vw 0 3vw;
   overflow: hidden;
 }
 .img-box {
   padding: .2vw;
+  overflow: hidden;
 }
-.hover {
-
-}
-
 .blue {
   grid-area: six;
   background-color: rgba(0, 206, 209, 1);
@@ -114,14 +106,18 @@ a.button:active, a.button-d:active{
   grid-area: two;
   background-color: rgb(255,99,71);
 }
-.red-l {
-  grid-area: two-l;
+.red-l-1 {
+  grid-area: two-l-1;
+  background-color: rgba(255,99,71, 0.8);
+}
+.red-l-2 {
+  grid-area: two-l-2;
   background-color: rgba(255,99,71, 0.8);
 }
 .red:hover {
     background: rgba(255,99,71, 0.6);
   }
-.red-l:hover {
+.red-l-1:hover, .red-l-2:hover  {
   background: rgba(255,99,71);
 }
 .yellow{
@@ -152,7 +148,6 @@ a.button:active, a.button-d:active{
   }
 .orange-l-1:hover, .orange-l-2:hover, .orange-l-3:hover {
   background-color: rgb(255,165,0);
-  opacity:0.5 ;
 }
 .green {
   grid-area: four;
@@ -161,32 +156,35 @@ a.button:active, a.button-d:active{
 .green:hover {
     background: rgba(60,179,113, 0.7);
   }
+#envelope{
+    display: none;
+  }
 .logo {
   overflow:hidden;
   height:100%;
   width:100%;
-  /* margin-bottom: 2vw; */
   transition: all 700ms ease-in-out;
 }
 .logo:hover, .social-logo:hover {
   -webkit-transform: scale(1.1); /* Chrome, Safari, Opera */
   transform: scale(1.2);
 }
-.work-logo:hover {
-  -webkit-transform:scale(1);
-  transform:scale(1);
-}
 .social-logo {
   height:70%;
   width:70%;
+  transition: all 700ms ease-in-out;
 }
 
 @media (max-width: 1270px) {
-  .nav-grid {
+.nav-grid {
     grid-template-rows: auto;
   }
 .box {
   padding: 1vw 3vw 2vw 3vw;
+  }
+a.button, a.button-d{
+   font-size: 13px;
+   margin-bottom:2vw;
   }
 }
 @media (max-width: 700px) {
@@ -202,10 +200,11 @@ a.button:active, a.button-d:active{
       "one one one"
       "one-l-1 one-l-2 one-l-3"
       "two two two"
-      "two-l two-l two-l"
+      "two-l-1 two-l-1 two-l-1"
+      "two-l-2 two-l-2 two-l-2"
       "three three three"
       "four four four"
-      "five six ."
+      "five six seven"
   }
   #logo {
     height:100px;
@@ -222,12 +221,16 @@ a.button:active, a.button-d:active{
     height:100%;
     padding: 2vw;
   }
-  .logo {
-    overflow:hidden;
-    /* padding: 4vw; */
+  a.button-d{
+    display: none;
   }
-  a.button{
-    margin-bottom:4vw;
+  #envelope {
+    display: inline-grid;
+    grid-area: seven;
+    background-color: rgba(60,179,113);
+  }
+  .green.box.para {
+    display: none;
   }
 }
 @media screen and (max-width: 500px) {
@@ -242,12 +245,21 @@ a.button:active, a.button-d:active{
       "one-l-2 one-l-2 one-l-2"
       "one-l-3 one-l-3 one-l-3"
       "two two two"
-      "two-l two-l two-l"
+      "two-l-1 two-l-1 two-l-1"
+      "two-l-2 two-l-2 two-l-2"
       "three three three"
       "four four four"
-      "five six ."
+      "five six seven"
   }
   a.button-d{
+    display: none;
+  }
+  #envelope {
+    display: inline-grid;
+    grid-area: seven;
+    background-color: rgba(60,179,113);
+  }
+  .green.box.para {
     display: none;
   }
 }

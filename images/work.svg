@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="260px" height="173px" viewBox="0 0 260 173" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>work</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="work" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bike" transform="translate(130.500000, 74.500000) scale(-1, 1) translate(-130.500000, -74.500000) translate(49.000000, 25.000000)" stroke="#FFFFFF" stroke-width="4">
+            <circle id="Oval-2" cx="31" cy="68" r="31"></circle>
+            <circle id="Oval-2-Copy" cx="132" cy="68" r="31"></circle>
+            <path d="M31,71 L50.8802487,0 L74.4837518,0 C78.2064819,1.84074074 79.6277354,4.78495009 78.7475123,8.83262804" id="Path-19"></path>
+            <path d="M96,6.5 L120,6.5" id="Path-20"></path>
+            <polyline id="Path-21" stroke-linejoin="round" points="109.402302 6 109.402302 25.592547 83.9030374 70 46 25.592547 109.402302 25.592547 133 70 84.3649677 70"></polyline>
+        </g>
+    </g>
+</svg>
