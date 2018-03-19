@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://caroevans.github.io/folio-site/</loc>
+    <image:image>
+    <image:loc>https://caroevans.github.io/folio-site/images/self-portrait.svg</image:loc>
+    <image:caption>Caro Evans' logo</image:caption>
+    </image:image>
+    <image:image>
+    <image:loc>https://caroevans.github.io/folio-site/images/ruby.svg</image:loc>
+    <image:caption>Icon for ruby and ruby on rails</image:caption>
+    </image:image>
+    <image:image>
+    <image:loc>https://caroevans.github.io/folio-site/images/html-css.svg</image:loc>
+    <image:caption>Icon for HTML and CSS</image:caption>
+    </image:image>
+    <image:image>
+    <image:loc>https://caroevans.github.io/folio-site/images/js.svg</image:loc>
+    <image:caption>Icon for Javascript</image:caption>
+    </image:image>
+    <image:image>
+    <image:loc>https://caroevans.github.io/folio-site/images/github.svg</image:loc>
+    <image:caption>GitHub Logo</image:caption>
+    </image:image>
+    <image:image>
+    <image:loc>https://caroevans.github.io/folio-site/images/linkedin.svg</image:loc>
+    <image:caption>Linkedin Logo</image:caption>
+    </image:image>
+    <image:image>
+    <image:loc>https://caroevans.github.io/folio-site/images/envelope.svg</image:loc>
+    <image:caption>Icon for email address</image:caption>
+    </image:image>
+  </url>
+</urlset>
