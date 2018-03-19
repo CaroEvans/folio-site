@@ -229,7 +229,7 @@ a.button, a.button-d{
     grid-area: seven;
     background-color: rgba(60,179,113);
   }
-  .green.box.para {
+  .green.txt-box.para {
     display: none;
   }
 }
@@ -259,7 +259,7 @@ a.button, a.button-d{
     grid-area: seven;
     background-color: rgba(60,179,113);
   }
-  .green.box.para {
+  .green.txt-box.para {
     display: none;
   }
 }
