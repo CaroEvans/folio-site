@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Arvo:400,700|Rubik:400,500');
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 body {
   font-family: "Rubik", Helvetica, sans-serif;
@@ -11,6 +12,8 @@ body {
 #head {
   height:140px;
   width:140px;
+  -webkit-transition: all 700ms ease-in-out;
+  -o-transition: all 700ms ease-in-out;
   transition: all 700ms ease-in-out;
   border-radius: 50%;
   border: 3px white solid;
@@ -18,7 +21,8 @@ body {
 }
 #head:hover {
   -webkit-transform: rotate(720deg); /* Chrome, Safari, Opera */
-  transform: rotate(720deg);
+  -ms-transform: rotate(720deg);
+      transform: rotate(720deg);
 }
 h1 {
   font-family: "Arvo", Helvetica, sans-serif;
@@ -52,19 +56,24 @@ a.button, a.button-d{
   padding:0.5em 1.2em;
   border:0.16em solid #ffffff;
   margin:0 0.1em 0.1em 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-decoration:none;
   font-family:"Arvo",sans-serif;
   font-weight:400;
   font-size: 15px;
   color:#000000;
   text-align:center;
+  -webkit-transition: all 700ms ease-in-out;
+  -o-transition: all 700ms ease-in-out;
   transition: all 700ms ease-in-out;
 }
 a.button:hover, a.button-d:hover{
  color:#222222;
  border-color:#222222;
- transform: scale(1.05);
+ -webkit-transform: scale(1.05);
+     -ms-transform: scale(1.05);
+         transform: scale(1.05);
 }
 a.button:active, a.button-d:active{
   color:#222222;
@@ -72,10 +81,13 @@ a.button:active, a.button-d:active{
 }
 .nav-grid {
     padding: 0 13.2vw;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 12vw 12vw 12vw 18vw 18vw;
-    grid-template-rows: 24vw 12vw 18vw 18vw;
-    grid-template-areas:
+    -ms-grid-columns: 12vw 12vw 12vw 18vw 18vw;
+        grid-template-columns: 12vw 12vw 12vw 18vw 18vw;
+    -ms-grid-rows: 24vw 12vw 18vw 18vw;
+        grid-template-rows: 24vw 12vw 18vw 18vw;
+        grid-template-areas:
     "one one one two two"
     "one-l-1 one-l-2 one-l-3 two-l-1 two-l-2"
     "three three three five six "
@@ -90,6 +102,8 @@ a.button:active, a.button-d:active{
   overflow: hidden;
 }
 .blue {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
   grid-area: six;
   background-color: rgba(0, 206, 209, 1);
 }
@@ -97,6 +111,8 @@ a.button:active, a.button-d:active{
     background: rgba(0, 206, 209, 0.7);
   }
 .purple {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
   grid-area: five;
   background-color: rgb(155,89,182);
 }
@@ -104,14 +120,21 @@ a.button:active, a.button-d:active{
     background: rgba(155,89,182,0.7);
   }
 .red {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
   grid-area: two;
   background-color: rgb(255,99,71);
 }
 .red-l-1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
   grid-area: two-l-1;
   background-color: rgba(255,99,71, 0.8);
 }
 .red-l-2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 5;
   grid-area: two-l-2;
   background-color: rgba(255,99,71, 0.8);
 }
@@ -122,6 +145,10 @@ a.button:active, a.button-d:active{
   background: rgba(255,99,71);
 }
 .yellow{
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: three;
   background-color: rgb(250,215,0);
 }
@@ -129,18 +156,27 @@ a.button:active, a.button-d:active{
     background: rgba(255,215,0, 0.7);
   }
 .orange {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: one;
   background-color: rgb(255,165,0);
 }
 .orange-l-1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: one-l-1;
   background-color: rgba(255,165,0, 0.8);
 }
 .orange-l-2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: one-l-2;
   background-color: rgba(255,165,0, 0.8);
 }
 .orange-l-3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   grid-area: one-l-3;
   background-color: rgba(255,165,0, 0.8);
 }
@@ -151,8 +187,11 @@ a.button:active, a.button-d:active{
   background-color: rgb(255,165,0);
 }
 .green {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
   grid-area: four;
-  background-color: rgba(60,179,113);
+  background-color: rgb(60,179,113);
 }
 .green:hover {
     background: rgba(60,179,113, 0.7);
@@ -164,21 +203,27 @@ a.button:active, a.button-d:active{
   overflow:hidden;
   height:100%;
   width:100%;
+  -webkit-transition: all 700ms ease-in-out;
+  -o-transition: all 700ms ease-in-out;
   transition: all 700ms ease-in-out;
 }
 .logo:hover, .social-logo:hover {
   -webkit-transform: scale(1.1); /* Chrome, Safari, Opera */
-  transform: scale(1.2);
+  -ms-transform: scale(1.2);
+      transform: scale(1.2);
 }
 .social-logo {
   height:70%;
   width:70%;
+  -webkit-transition: all 700ms ease-in-out;
+  -o-transition: all 700ms ease-in-out;
   transition: all 700ms ease-in-out;
 }
 
 @media (max-width: 1270px) {
 .nav-grid {
-    grid-template-rows: auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
   }
 .box {
   padding: 1vw 3vw 2vw 3vw;
@@ -193,11 +238,14 @@ a.button, a.button-d{
     padding: 0 5vw 0 5vw;
   }
   .nav-grid {
+      display: -ms-grid;
       display: grid;
       padding: 0 10.5vw;
-      grid-template-columns: 25vw 25vw 25vw;
-      grid-template-rows: auto;
-      grid-template-areas:
+      -ms-grid-columns: 25vw 25vw 25vw;
+          grid-template-columns: 25vw 25vw 25vw;
+      -ms-grid-rows: auto;
+          grid-template-rows: auto;
+          grid-template-areas:
       "one one one"
       "one-l-1 one-l-2 one-l-3"
       "two two two"
@@ -226,7 +274,10 @@ a.button, a.button-d{
     display: none;
   }
   #envelope {
+    display: -ms-inline-grid;
     display: inline-grid;
+    -ms-grid-row: 8;
+    -ms-grid-column: 3;
     grid-area: seven;
     background-color: rgba(60,179,113);
   }
@@ -236,11 +287,14 @@ a.button, a.button-d{
 }
 @media screen and (max-width: 500px) {
   .nav-grid {
+      display: -ms-grid;
       display: grid;
       padding: 0 10.5vw;
-      grid-template-columns: 25vw 25vw 25vw;
-      grid-template-rows: auto 30vw 30vw 30vw auto;
-      grid-template-areas:
+      -ms-grid-columns: 25vw 25vw 25vw;
+          grid-template-columns: 25vw 25vw 25vw;
+      -ms-grid-rows: auto 30vw 30vw 30vw auto;
+          grid-template-rows: auto 30vw 30vw 30vw auto;
+          grid-template-areas:
       "one one one"
       "one-l-1 one-l-1 one-l-1"
       "one-l-2 one-l-2 one-l-2"
@@ -256,7 +310,10 @@ a.button, a.button-d{
     display: none;
   }
   #envelope {
+    display: -ms-inline-grid;
     display: inline-grid;
+    -ms-grid-row: 10;
+    -ms-grid-column: 3;
     grid-area: seven;
     background-color: rgba(60,179,113);
   }
