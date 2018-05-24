@@ -49,6 +49,7 @@ h1 {
 h3.para {
   font-size: 22px;
   font-family: "Arvo", Helvetica, sans-serif;
+  font-weight: 400;
   line-height: 1;
 }
 a.button, a.button-d{
