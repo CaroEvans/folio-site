@@ -88,10 +88,10 @@ a.button:active, a.button-d:active{
     -ms-grid-rows: 24vw 12vw 18vw 18vw;
         grid-template-rows: 24vw 12vw 18vw 18vw;
         grid-template-areas:
-    "one one one two two"
-    "one-l-1 one-l-2 one-l-3 two-l-1 two-l-2"
-    "three three three five six "
-    "three three three four four";
+          "one one one two two"
+          "one-l-1 one-l-2 one-l-3 two-l-1 two-l-2"
+          "three three three five six"
+          "three three three four four";
 }
 .txt-box {
   padding: 1vw 3vw 0 3vw;
